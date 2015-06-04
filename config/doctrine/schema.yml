@@ -1,0 +1,20 @@
+options:
+  charset: utf8
+  collate: utf8_general_ci
+  
+
+client:
+  inheritance:
+    type:                         column_aggregation
+    extends:                      sfGuardUser
+    keyField:                     type
+    keyValue:                     1
+      
+prestataire:
+  inheritance:
+    type:                         column_aggregation
+    extends:                      sfGuardUser
+    keyField:                     type
+    keyValue:                     2    
+
+     
